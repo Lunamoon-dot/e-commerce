@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "c:/Users/dell/OneDrive/Desktop/backend-course"],
+      "description": "Git operations: status, diff, commit, branch, log, etc."
+    },
+    "docker": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-docker"],
+      "description": "Docker management: containers, images, compose, logs"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic/mcp-filesystem",
+        "."
+      ],
+      "description": "File system operations: read, write, search, directory listing"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "description": "Fetch web content and APIs"
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-sequential-thinking"],
+      "description": "Break down complex problems into sequential steps"
+    }
+  }
+}
