@@ -28,9 +28,9 @@ export default function ProductDetailPage() {
         <p className="text-muted-foreground mb-8 max-w-md mx-auto text-balance">
           Sản phẩm này có thể đã bị xóa hoặc không tồn tại trong hệ thống của chúng tôi.
         </p>
-        <Button asChild className="rounded-full px-8">
-          <Link to="/products">Quay lại cửa hàng</Link>
-        </Button>
+        <Link to="/products">
+          <Button className="rounded-full px-8">Quay lại cửa hàng</Button>
+        </Link>
       </Container>
     );
   }
@@ -93,7 +93,7 @@ export default function ProductDetailPage() {
                 alt={product.name} 
                 className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 ease-out hover:scale-[1.03]" 
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
               />
               {discountPercent > 0 && (
                 <Badge variant="sale" className="absolute top-5 left-5 text-xs font-semibold tracking-wide shadow-sm px-3 py-1 bg-destructive text-destructive-foreground border-none">
